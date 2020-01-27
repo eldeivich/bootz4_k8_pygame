@@ -8,11 +8,11 @@ FPS = 60
 WHITE = (255, 255, 255)
 YELLOW = (255, 255, 0)
 
-level1 = ['-x-xxx-x'
-          'xxxxxxxx'
-          'x-x-x-x-'
-          '-x-x-x-x'
-          'xxxx-xxx'
+level1 = ['',
+          '-xxxxxxxxxxxxxx-',
+          '-x------------x-',
+          '-x------------x-',
+          '-xxxxxxxxxxxxxx-'
 ]
 
 class Game:
@@ -49,9 +49,9 @@ class Game:
             for i in range(16):
                 t = Tile(i*50, 60+j*32)
                 self.tileGroup.add(t)
-
+        '''
         self.tileGroup = Map(level1)
-        
+        '''
         self.allSprites.add(self.tileGroup)
         self.allSprites.add(self.player)
         self.allSprites.add(self.ball)
